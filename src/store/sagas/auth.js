@@ -26,10 +26,10 @@ export function* authUserSaga(action) {
             returnSecureToken: true,
         };
 
-        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBFTweW0MlGRX_QT7WT6deLbQUh5xV6xH4';
+        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=YOUR_KEY_HERE';
 
         if (!action.isSignup) {
-            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBFTweW0MlGRX_QT7WT6deLbQUh5xV6xH4';
+            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=YOUR_KEY_HERE';
         }
 
         try {
